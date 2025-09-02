@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Deposit - SecureBank</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="brand-name">SecureBank</div>
+    <div class="header-buttons">
+      <a href="login.html" class="outline-btn">Logout</a>
+    </div>
+  </header>
+
+  <div class="main-section">
+    <div class="auth-card">
+      <h2>Deposit Money</h2>
+      <p>Your current balance is: ₹<span id="balance">0</span></p>
+      <input type="number" id="depositAmount" placeholder="Enter amount" required />
+      <button class="btn" onclick="confirmDeposit()">Deposit</button>
+    </div>
+  </div>
+
+  <div id="popup" class="popup-overlay" style="display: none;">
+  <div class="popup-container">
+    <h3>Deposit Successful</h3>
+    <p><strong>Name:</strong> <span id="popupName"></span></p>
+    <p><strong>Email:</strong> <span id="popupEmail"></span></p>
+    <p><strong>Phone:</strong> <span id="popupPhone"></span></p>
+    <p><strong>Account Type:</strong> <span id="popupType"></span></p>
+    <p><strong>Deposited Amount:</strong> ₹<span id="popupAmount"></span></p>
+    <p><strong>Current Balance:</strong> ₹<span id="popupBalance"></span></p>
+    <div class="popup-buttons">
+      <button onclick="goToDeposit()" class="btn outline-btn">Continue</button>
+      <button onclick="goToDashboard()" class="btn filled-btn">Go to Dashboard</button>
+    </div>
+  </div>
+</div>
+
+    <script src="script.js"></script>
+
+
+</body>
+</html>

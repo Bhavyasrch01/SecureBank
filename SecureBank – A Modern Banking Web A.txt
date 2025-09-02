@@ -1,0 +1,64 @@
+SecureBank – A Modern Banking Web App
+
+SimpleBank is a clean and modern web-based banking interface built using HTML, CSS, and JavaScript. It supports key functionalities such as user registration, login, deposit, withdrawal, and balance tracking — all styled with a responsive UI.
+
+ Features
+
+•	 Welcome Page:
+A sleek and responsive landing page that introduces the user to the banking app.
+•	 User Authentication:
+Includes registration (sign up), login, and logout features with styled input forms and buttons.
+•	Deposit Functionality:
+Users can deposit money, and the updated balance is reflected dynamically.
+A styled popup confirms successful transactions and displays user details.
+•	Withdraw Functionality:
+Users can withdraw money if they have sufficient balance.
+If not, a popup notifies them about the insufficient funds along with the current balance.
+•	 Dashboard Page:
+Displays a welcome message with the username and current balance.
+Users can access Deposit and Withdraw pages from here.
+•	 Forgot Password (UI only):
+A form that accepts the user’s email and shows a popup confirmation for reset instructions.
+•	Responsive Design:
+Fully styled layout using CSS with responsive behavior across different devices.
+
+🛠 Technologies Used
+•	 Frontend: HTML5, CSS3, JavaScript
+•	 Styling: Custom CSS (no frameworks like Bootstrap used)
+•	 Storage: In-memory object storage for balance (JSON server)
+
+📁 Project Structure
+simple-banking-app/
+│
+├── public/
+│   ├── index.html              # Welcome page
+│   ├── login.html              # Login page
+│   ├── signup.html             # Sign Up page
+│   ├── dashboard.html          # Dashboard page after login
+│   ├── deposit.html            # Deposit functionality
+│   ├── withdraw.html           # Withdraw functionality
+│   ├── forgot-password.html    # Forgot password form and popup
+│   ├── style.css               # All UI styling
+│   └── script.js               # All interactive logic (balance, popups etc.)
+│
+├── package.json                # Project metadata
+├── db.json                     # (Optional) placeholder file
+└── README.md                   # This file
+
+ How It Works
+•	All balance operations are performed using JavaScript variables (client-side).
+•	Balance is updated dynamically and retained during the session.
+•	Each action (deposit or withdraw) triggers a styled popup for confirmation.
+•	Withdraw page prevents overdraw and alerts the user visually.
+ Future Enhancements (Suggestions)
+•	Add real database connectivity (e.g., Firebase, MongoDB, SQLite).
+•	Implement persistent login sessions and server-side authentication.
+•	Add transaction history for each user.
+•	Add input validation and currency formatting.
+•	Integrate email service for real password reset.
+
+Developed By
+
+Bhavya Sri Chemitiganti
+📧 Email: bhavyasrichemitiganti@gmail.com
+
