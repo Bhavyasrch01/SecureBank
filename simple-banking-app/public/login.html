@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Welcome - SecureBank</title>
+  <link rel="stylesheet" />
+</head>
+<body>
+  <header class="header">
+  <div class="brand-name">SecureBank</div>
+  <div class="header-buttons">
+    <a href="login.html" class="outline-btn">Login</a>
+    <a href="signup.html" class="filled-btn">Sign Up</a>
+  </div>
+</header>
+
+
+  <main class="split-container">
+    <div class="welcome-side">
+      <h1>Welcome to SecureBank</h1>
+      <p>Fast. Secure. Trusted.<br>Your digital banking partner for everyday life.</p>
+      <img src="https://cdn-icons-png.flaticon.com/512/3135/3135706.png" alt="Bank Icon" class="hero-image">
+    </div>
+
+    <div class="login-side">
+      <div class="auth-card">
+        <h2>Login</h2>
+        <form onsubmit="handleLogin(event)">
+          <input type="email" id="email" placeholder="Email" required />
+          <input type="password" id="password" placeholder="Password" required />
+          <button class="btn" type="submit">Login</button>
+        </form>
+        <div class="login-links">
+          <a href="forgot-password.html">Forgot Password?</a>
+          <p>Don't have an account? <a href="signup.html">Register</a></p>
+          <p>Login as Admin?</p><a href="admin.html">Admin</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
+<style>
+  * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #3b4096, #4a307a);
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  background: white;
+  padding: 16px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.brand-name {
+  font-size: 24px;
+  font-weight: 700;
+  color: #2b3b8b;
+}
+
+.header-buttons {
+  display: flex;
+  gap: 12px;
+}
+
+.outline-btn,
+.filled-btn {
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.outline-btn {
+  border: 2px solid #6b73ff;
+  color: #6b73ff;
+  background: white;
+}
+
+.outline-btn:hover {
+  background: #eef2ff;
+  text-decoration: underline;
+}
+
+.filled-btn {
+  background: #6b73ff;
+  color: white;
+  border: none;
+}
+
+.filled-btn:hover {
+  background: #4e5fe0;
+  text-decoration: underline;
+}
+
+.split-container {
+  display: flex;
+  flex: 1;
+  min-height: 85vh;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.welcome-side {
+  flex: 1;
+  max-width: 500px;
+  text-align: center;
+  color: white;
+}
+
+.welcome-side h1 {
+  font-size: 32px;
+  margin-bottom: 16px;
+}
+
+.welcome-side p {
+  font-size: 16px;
+  margin-bottom: 24px;
+}
+
+.hero-image {
+  width: 100px;
+  height: 100px;
+}
+
+.login-side {
+  flex: 1;
+  max-width: 400px;
+}
+
+.auth-card {
+  background: white;
+  padding: 40px 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.auth-card h2 {
+  text-align: center;
+  color: #2b3b8b;
+  margin-bottom: 20px;
+}
+
+.auth-card input {
+  display: block;
+  width: 100%;
+  padding: 12px 14px;
+  margin-bottom: 16px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.auth-card input:focus {
+  border-color: #6b73ff;
+  outline: none;
+}
+
+.btn {
+  background: linear-gradient(to right, #6b73ff, #000dff);
+  color: white;
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: linear-gradient(to right, #4e5fe0, #0000bb);
+}
+
+.login-links {
+  margin-top: 16px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.login-links a {
+  color: #6b73ff;
+  text-decoration: none;
+}
+
+.login-links a:hover {
+  text-decoration: underline;
+}
+
+.footer {
+  text-align: center;
+  padding: 16px;
+  background-color: #f8f9fd;
+  font-size: 14px;
+  color: #333;
+  border-top: 1px solid #ddd;
+}
+
+</style>
+</html>

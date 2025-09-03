@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Sign Up - SecureBank</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="brand-name">SecureBank</div>
+    <div class="header-buttons">
+      <a href="login.html" class="outline-btn">Login</a>
+      <a href="signup.html" class="filled-btn">Sign Up</a>
+    </div>
+  </header>
+
+  <div class="auth-card">
+    <h2>Open a New Account</h2>
+    <form onsubmit="handleSignup(event)">
+      <input type="text" id="fullName" placeholder="Full Name" required />
+      <input type="email" id="email" placeholder="Email Address" required />
+      <input type="tel" id="phone" placeholder="Phone Number" required />
+      <select id="accountType" required>
+        <option value="">Select Account Type</option>
+        <option value="savings">Savings</option>
+        <option value="current">Current</option>
+        <option value="salary">Salary</option>
+        <option value="fixed">Fixed Deposit</option>
+        <option value="recurring">Recurring Deposit</option>
+      </select>
+      <input type="password" id="password" placeholder="Password" required />
+      <button class="btn" type="submit">Sign Up</button>
+    </form>
+    <div class="login-links">
+      <p>Already have an account? <a href="login.html">Login</a></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

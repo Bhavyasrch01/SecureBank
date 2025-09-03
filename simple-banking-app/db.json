@@ -1,0 +1,61 @@
+{
+  "users": [
+    {
+      "id": "b935",
+      "name": "Bhavya Sri Chemitiganti",
+      "email": "bhavyasri1542@gmail.com",
+      "balance": 1000,
+      "password": "secret"
+    },
+    {
+      "id": "u001",
+      "name": "Gayathri G",
+      "email": "gayathri.g@example.com",
+      "balance": 2500,
+      "password": "gayatri@123"
+    },
+    {
+      "id": "u002",
+      "name": "Veena Madhuri",
+      "email": "veena.madhuri@example.com",
+      "balance": 3200,
+      "password": "veenam@456"
+    },
+    {
+      "id": "u003",
+      "name": "Sunitha Chakravaram",
+      "email": "sunitha.c@example.com",
+      "balance": 1800,
+      "password": "sunitha789"
+    },
+    {
+      "id": "u004",
+      "name": "Satya Sri Ganesh",
+      "email": "satya.ganesh@example.com",
+      "balance": 2750,
+      "password": "satyasri@321"
+    },
+    {
+      "id": "u005",
+      "name": "Gowtham Madira",
+      "email": "gowtham.m@example.com",
+      "balance": 1450,
+      "password": "gowtham007"
+    },
+    {
+      "id": "u006",
+      "name": "Bhuvan Sai Ram",
+      "email": "bhuvan.ram@example.com",
+      "balance": 3900,
+      "password": "bhuvan@999"
+    }
+  ],
+  "transactions": [],
+  "admins": [
+    {
+      "id": 1,
+      "username": "Admin01",
+      "password": "admin123"
+    }
+  ]
+}

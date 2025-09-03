@@ -1,0 +1,361 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #3b4096, #4a307a);
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+.header {
+  width: 100%;
+  background: white;
+  padding: 16px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  font-weight: 700;
+  font-size: 24px;
+  color: #2b3b8b;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.header-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.outline-btn, .filled-btn {
+  padding: 8px 16px;
+  font-size: 14px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: 600;
+  border: 2px solid #6b73ff;
+  transition: all 0.3s ease;
+}
+
+.outline-btn {
+  background: white;
+  color: #6b73ff;
+}
+
+.outline-btn:hover {
+  background: #eef1ff;
+}
+
+.filled-btn {
+  background: #6b73ff;
+  color: white;
+  border: 2px solid transparent;
+}
+
+.filled-btn:hover {
+  background: #4e5fe0;
+}
+
+/* Auth Card Centering */
+.auth-card {
+  width: 30%;
+  margin: 120px auto 40px;
+  background: white;
+  border-radius: 20px;
+  padding: 40px 30px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  color: #2b3b8b;
+  margin-top: 120px;
+}
+
+.auth-card h2 {
+  text-align: center;
+  margin-bottom: 24px;
+  font-size: 22px;
+}
+
+/* Form Styling */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+input, select {
+  padding: 12px 14px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+input:focus, select:focus {
+  border-color: #6b73ff;
+}
+
+button.btn {
+  background: linear-gradient(to right, #6b73ff, #000dff);
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  font-weight: 600;
+}
+
+button.btn:hover {
+  background: linear-gradient(to right, #4e5fe0, #0000bb);
+}
+
+/* Login link section */
+.login-links {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.login-links a {
+  color: #6b73ff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.login-links a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 520px) {
+  .auth-card {
+    margin: 100px 20px 30px;
+    padding: 30px 20px;
+  }
+
+  .header {
+    padding: 14px 20px;
+    font-size: 20px;
+  }
+}
+
+.main-dashboard {
+  margin-top: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+.auth-card.wide {
+  max-width: 500px;
+  width: 100%;
+  background: white;
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.auth-card.wide p {
+  margin: 20px 0;
+  font-size: 18px;
+}
+
+.main-dashboard {
+  margin-top: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+.auth-card.wide {
+  max-width: 500px;
+  width: 100%;
+  background: white;
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.auth-card.wide p {
+  margin: 20px 0;
+  font-size: 18px;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.btn1,
+.btn2 {
+  padding: 12px 24px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+  border: none;
+  text-align: center;
+  min-width: 120px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.btn1 {
+  background: linear-gradient(to right, #6b73ff, #000dff);
+  color: white;
+}
+
+.btn1:hover {
+  background: linear-gradient(to right, #4e5fe0, #0000bb);
+}
+
+.btn2 {
+  background: linear-gradient(to right, #ff4b4b, #cc0000);
+  color: white;
+}
+
+.btn2:hover {
+  background: linear-gradient(to right, #e60000, #990000);
+}
+
+.main-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 100px);
+  padding-top: 80px;
+}
+
+.auth-card {
+  background: white;
+  border-radius: 20px;
+  padding: 30px 40px;
+  max-width: 400px;
+  width: 100%;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.auth-card h2 {
+  margin-bottom: 10px;
+  color: #2b3b8b;
+}
+
+.auth-card input[type="number"] {
+  margin: 20px 0;
+  padding: 12px;
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  outline: none;
+}
+
+.auth-card input[type="number"]:focus {
+  border-color: #6b73ff;
+}
+
+/* Popup Overlay */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Popup Box */
+.popup-container {
+  background: #ffffff;
+  padding: 30px 35px;
+  border-radius: 16px;
+  width: 90%;
+  max-width: 500px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  text-align: left;
+  color: #2b3b8b;
+  font-family: 'Segoe UI', sans-serif;
+  animation: popup-fade 0.3s ease-in-out;
+}
+
+.popup-container h3 {
+  font-size: 24px;
+  margin-bottom: 16px;
+  color: #2b3b8b;
+}
+
+/* User Info */
+.popup-container p {
+  margin-bottom: 10px;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+/* Buttons */
+.popup-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 24px;
+  gap: 10px;
+}
+
+.popup-buttons .btn {
+  flex: 1;
+  padding: 12px;
+  font-size: 15px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.popup-buttons .filled-btn {
+  background: linear-gradient(to right, #6b73ff, #000dff);
+  color: white;
+  border: none;
+}
+
+.popup-buttons .outline-btn {
+  background: white;
+  border: 2px solid #6b73ff;
+  color: #2b3b8b;
+}
+
+.popup-buttons .filled-btn:hover {
+  background: linear-gradient(to right, #4e5fe0, #0000bb);
+}
+
+.popup-buttons .outline-btn:hover {
+  background: #eef2ff;
+}
+
+/* Optional animation */
+@keyframes popup-fade {
+  from {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
