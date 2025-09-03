@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Simple Banking App with login, deposit, and withdrawal",
   "main": "index.js",
+    "license": "MIT",
   "scripts": {
     "start": "concurrently \"npm run server\" \"npm run client\"",
     "server": "json-server --watch db.json --port 5000",
